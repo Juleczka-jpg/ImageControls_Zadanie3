@@ -39,6 +39,14 @@ namespace MauiApp12
             };
         }
 
+        /************************************************************************
+        nazwa funkcji: OnChangeAspectClicked
+        opis funkcji: Obsługuje kliknięcie przycisku (ImageButton). Funkcja cyklicznie zmienia tryb skalowania (Aspect) obrazu LocalImage zgodnie z kolejnością zdefiniowaną w słowniku _aspectCycle. Po zmianie aktualny tryb skalowania jest wyświetlany w etykiecie AspectLabel.
+        parametry: sender – obiekt wywołujący zdarzenie e – argumenty zdarzenia kliknięcia.
+        zwracany typ i opis: brak(void) - wyświetla w AspectLebel tryb skalowania.
+        autor:
+        ************************************************************************/
+
         private void OnChangeAspectClicked(object sender, EventArgs e)
         {
             LocalImage.Aspect = _aspectCycle[LocalImage.Aspect];
